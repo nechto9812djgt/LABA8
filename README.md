@@ -74,7 +74,6 @@
                 https://www.codewars.com/kata/5925138effaed0de490000cf<br>
                 https://www.codewars.com/kata/59269e371a640c0e98000085<br>
                 https://www.codewars.com/kata/5913ffb2cb1475215c000039<br>
-
         </p>
         <h2 align = "center">Решение</h2>
         <p font-size = "12">Для выполнения этой лабораторной работы, я пользовалась:</p>
