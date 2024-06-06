@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab8</title>
+    <style>
+        .title{ font-weight: bold;}
+    </style>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="title">Первое задание:</p>
+        <p id="first"></p>
+        <button id="btn1">Нажмите</button> <button id="btn2">Нажмите</button>
+        <p class="title">Второе задание:</p>
+        <p id="second"></p>
+        <p class="title">Третье задание:</p>
+        <p id="third"></p>
+        <p class="title">Четвертое задание:</p>
+        <p id="fourth"></p>
+        <p class="title">Пятое задание:</p>
+        <p id="fifth"></p>
+        <p class="title">Шестое задание:</p>
+        <p id="Sixth"></p>
+        <p class="title">Седьмое задание:</p>
+        <p id="seventh"></p>
+        <p class="title">Восьмое задание:</p>
+        <p id="eight"></p>
+        <p class="title">Девятое задание:</p>
+        <p id="nine"></p>
+        <p class="title">Десятое задание:</p>
+            <table id="calendar">
+                <thead>
+                    <tr>
+                        <th>Пн</th>
+                        <th>Вт</th>
+                        <th>Ср</th>
+                        <th>Чт</th>
+                        <th>Пт</th>
+                        <th>Сб</th>
+                        <th>Вс</th>
+                    </tr>
+                </thead>
+                <tbody id="calendar-body"></tbody>
+            </table>
+        <p class="title">Одинадцатое задание:</p>
+        <p id="eleven"></p>
+        <p class="title">Двенадцатое задание:</p>
+        <p id="twelve"></p>
+        <p class="title">Тренадцатое задание:</p>
+        <p id="thirteen"></p>
+        <p class="title">Четырнадцатое задание:</p>
+        <p id="fourteen"></p>
+        <p class="title">Пятнадцатое задание:</p>
+        <p id="fiveteen"></p>
+        <p class="title">Шестнадцатое задание:</p>
+        <p id="sixteen"></p>
+        <p class="title">Семьнадцатое задание:</p>
+        <p id="seventeen"></p>
+        <p class="title">Восемьнадцатое задание:</p>
+        <p id="eighteen"></p>
+        <p class="title">Девятнадцатое задание:</p>
+        <p id="nineteen"></p>
+        <p class="title">Двенадцатое задание:</p>
+        <p id="twenty"></p>
+    </div>
+    <script>
+       function one()
+       {
+        if (true) {document.getElementById('first').innerText = `${1+1}`;}
+       }
+       function two()
+       {
+        if (false) {document.getElementById('first').innerText = `${1+1}`;}
+       }
+       document.getElementById('btn1').addEventListener('click', one);
+       document.getElementById('btn2').addEventListener('click', two);
+    </script>
+    <script>
+        let m = 30;
+        let n;
+        if (m > 50) {
+            n = 'большое';
+        } else {
+            n = 'маленькое';
+        }
+        document.getElementById('second').innerText = `${n}`;
+    </script>
+    <script>
+        var i = 2;
+        while( i < 9 ){
+ 	        console.log( i++ );
+        }
+        document.getElementById('third').innerHTML = `while прошел ${i-2} раз`;
+    </script>
+    <script>
+        let number = 45;
+        while (number <= 67) {
+            document.getElementById('fourth').innerHTML += ` ${number}`;
+            number++;
+        }
+    </script>
+    <script>
+        let number1 = 45;
+        while (number1 <= 670) {
+            if (number1 % 10 === 0) {
+                document.getElementById('fifth').innerHTML += ` ${number1}`;
+            }
+            number1++;
+        }
+    </script>
+    <script>
+        for (let i = 45; i <= 67; i++) {
+            document.getElementById('Sixth').innerHTML += ` ${i}`;
+        }
+        for (let j = 45; j <= 670; j++) {
+            if (j % 10 === 0) {
+                document.getElementById('Sixth').innerHTML += ` ${j}`;            }
+        }
+    </script>
+    <script>
+        var a = 5;
+        switch(a) {
+            case 0:
+                document.getElementById('seventh').innerHTML = `Ноль`;
+                break;
+            case 1:
+                document.getElementById('seventh').innerHTML = `Один`;
+                break;
+            case 2:
+                document.getElementById('seventh').innerHTML = `Два`;
+                break;
+            case 3:
+                document.getElementById('seventh').innerHTML = `Три`;
+                break;
+            case 4:
+                document.getElementById('seventh').innerHTML = `Четыре`;
+                break;
+            case 5:
+                document.getElementById('seventh').innerHTML = `Пять`;
+                break;
+            case 6:
+                document.getElementById('seventh').innerHTML = `Шесть`;
+                break;
+            case 7:
+                document.getElementById('seventh').innerHTML = `Семь`;
+                break;
+            case 8:
+                document.getElementById('seventh').innerHTML = `Восемь`;
+                break;
+            case 9:
+                document.getElementById('seventh').innerHTML = `Девять`;
+                break;
+        }
+    </script>
+    <script>
+        for (var i = 0; i < 10; i++) {
+            document.getElementById('eight').innerHTML += ('<img src="https://i.pinimg.com/564x/f4/a4/5c/f4a45c27acc2efb080b8a7d2ca5bd67c.jpg" alt="Image" ' + i + '" />');
+        }
+    </script>
+    <script>
+        var size = 120;
+        var unit = "Кб";
+        var bytes = size;
+        switch(unit) {
+            case "Кб":
+                bytes *= 1024;
+                break;
+            case "Мб":
+                bytes *= 1024 * 1024;
+                break;
+            case "Гб":
+                bytes *= 1024 * 1024 * 1024;
+                break;
+        }
+        document.getElementById('nine').innerText = `Количество байт в размере ${size} ${unit} равно ${bytes} байт.`;
+    </script>
+    <script>
+        const calendarBody = document.getElementById('calendar-body');
+        const daysInMonth = 30;
+        const startDay = 1;
+        let dayCounter = 1;
+        for (let i = 0; i < 5; i++) {
+            let row = document.createElement('tr');
+
+            for (let j = 0; j < 7; j++) {
+                let cell = document.createElement('td');
+                if (i === 0 && j < startDay) {
+                    cell.textContent = '';
+                } else if (dayCounter <= daysInMonth) {
+                    cell.textContent = dayCounter;
+                    dayCounter++;
+                }
+                row.appendChild(cell);
+            }
+            calendarBody.appendChild(row);
+        }
+    </script>
+    <script>
+        function hello1() {
+            return "Привет, JavaScript!";
+        }
+        document.getElementById('eleven').innerText = `${hello1()}`;
+    </script>
+    <script>
+        function hello2(name) {
+            if (name) {
+                return "Привет, " + name;
+            } else {
+                return "Привет, гость";
+            }
+        }
+        document.getElementById('twelve').innerHTML = `${hello2("Василий")} <br> ${hello2()}`;
+    </script>
+    <script>
+        function mul(n, m) {
+            return n * m;
+        }
+        document.getElementById('thirteen').innerText = `${mul(5,3)}`;
+    </script>
+    <script>
+        function repeat(str = '', n = 2) {
+            return str.repeat(n);
+        }
+        document.getElementById('fourteen').innerHTML = `${repeat('Hello', 3)} <br> ${repeat('🌟', 5)} <br> ${repeat()}`;
+    </script>
+    <script>
+        function rgb(r = 0, g = 0, b = 0) {
+            return `rgb(${r},${g},${b})`;
+        }
+        document.getElementById('fiveteen').innerHTML = `${rgb(23, 100, 134)} <br> ${rgb(255)}`;
+    </script>
+    <script>
+        function avg(...args) {
+            if (args.length === 0) {
+                return 0;
+            }
+
+            const total = args.reduce((acc, cur) => acc + cur, 0);
+            return total / args.length;
+        }
+        document.getElementById('sixteen').innerHTML = `${avg(1, 2, 3, 4, 5)} <br> ${avg(10, 20, 30)} <br> ${avg()}`;
+    </script>
+    <script>
+        function m(a, b) {
+            return mul(a, b);
+        }
+
+        function log(value) {
+            console.log(value);
+        }
+        const result = m(5, 3);
+        log(result); //15
+        document.getElementById('seventeen').innerText = `15`;
+    </script>
+    <script>
+        function operation(m, n, o) {
+            return o(m, n);
+        }
+        const addition = function(a, b) {
+            return a + b;
+        };
+        const multiplication = function(a, b) {
+            return a * b;
+        };
+        const result1 = operation(5, 3, addition);
+        const result2 = operation(5, 3, multiplication);
+        document.getElementById('eighteen').innerHTML = `${result1} | ${result2}`;
+    </script>
+    <script>
+        function addN(n) {
+            return function(x) {
+                return n + x;
+            };
+        }
+        const add5 = addN(5);
+        document.getElementById('nineteen').innerHTML = `${add5(3)} | ${add5(10)}`;
+    </script>
+    <script>
+        function words(n, d = 0) {
+            let word = 'товар';
+            if (n % 10 === 1 && n % 100 !== 11) {
+                word += (d ? 'а' : '');
+            } else if ([2, 3, 4].includes(n % 10) && ![12, 13, 14].includes(n % 100)) {
+                word += (d ? 'а' : 'ов');
+            } else {
+                word += (d ? 'ов' : '');
+            }
+            return `${n} ${word}`;
+        }
+        document.getElementById('twenty').innerHTML = `${words(1)} <br> ${words(2)} ${words(5, 1)} <br> ${words(22)}`;
+    </script>
+</body>
+</html>
